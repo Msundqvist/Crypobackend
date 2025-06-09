@@ -20,7 +20,7 @@ const ROOT_NODE = `http://localhost:${DEFAULT_PORT}`;
 let NODE_PORT;
 
 app.use('/api/v1/blocks', blockchainRoutes);
-app.use('/api/v1/wallet', transactionRoutes)
+app.use('/api/v1/wallet', transactionRoutes);
 
 const synchronize = async () => {
     let response = await fetch(`${ROOT_NODE}/api/v1/blocks`);
