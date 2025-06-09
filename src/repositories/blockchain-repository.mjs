@@ -1,5 +1,5 @@
-import { blockchain } from '../server.mjs';
-import AppError from '../models/error/appError.mjs';
+import { blockchain } from "../server.mjs";
+
 
 export default class BlockchainRepository {
 
@@ -8,6 +8,10 @@ export default class BlockchainRepository {
         return blocks
     }
 
+    async add(block) {
+        blockchain.addBlock({ data: block })
+        return blockchain.chain
+    }
 
     async cleanUpBlockchainData() {
         const blocks = blockchain.chain.slice(1);
