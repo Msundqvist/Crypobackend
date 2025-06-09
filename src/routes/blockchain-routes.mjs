@@ -1,8 +1,9 @@
 import { Router } from "express";
+import { listAllBlocks } from "../controllers/blockchain-controllers.mjs";
 
 const routes = Router();
 
-routes.get('/', listAllBlocks)
-routes.post('/mine', addBlock)
+routes.get('/').get(listAllBlocks)
+routes.post('/mine')
 
 export default routes; 

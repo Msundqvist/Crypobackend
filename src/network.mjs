@@ -19,9 +19,9 @@ export default class Network {
         this.transactionPool = transactionPool;
         this.wallet = wallet;
 
-        this.pubNub = new PubNub(credentials)
-        this.pubNub.subscribe({ channels: Object.values(CHANNELS) });
-        this.pubNub.addListner(this.handleMessage());
+        this.pubnub = new PubNub(credentials);
+        this.pubnub.subscribe({ channels: Object.values(CHANNELS) });
+        this.pubnub.addListener(this.handleMessage());
     }
 
     broadcastChain() {
