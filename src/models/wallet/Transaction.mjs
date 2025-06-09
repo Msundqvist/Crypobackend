@@ -3,7 +3,7 @@ import { verifySignature } from '../../utilities/keyManager.mjs';
 import { MINING_REWARD, REWARD_ADDRESS } from '../../utilities/config.mjs';
 
 
-export default class Transactions {
+export default class Transaction {
     constructor({ sender, recipient, amount, input, outputMap }) {
         this.id = uuidv4().replaceAll('-', '');
         this.outputMap = outputMap || this.createOutputMap({ sender, recipient, amount });
