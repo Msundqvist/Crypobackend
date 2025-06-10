@@ -5,4 +5,21 @@ import Wallet from '../models/wallet/Wallet.mjs';
 
 export default class TransactionRepository {
 
+    async add(transaction) {
+
+    }
+
+    async getWallet(adress, balance) {
+
+    }
+    async list() {
+
+    }
+
+    async mineTransaction() {
+
+    }
+
+
+
 }
