@@ -1,21 +1,25 @@
+import blockchainModels from "../models/schemas/blockchainModels.mjs";
 import { blockchain } from "../server.mjs";
 
 
 export default class BlockchainRepository {
 
-    async listAllBlocks() {
-        const blocks = await this.cleanUpBlockchainData();
-        return blocks
-    }
-
     async add(block) {
-        blockchain.addBlock({ data: block })
-        return blockchain.chain
+        block.id = crypto.randomUUID().replaceAll('-', '')
+        return await blockchainModels.create(block)
     }
 
-    async cleanUpBlockchainData() {
-        const blocks = blockchain.chain.slice(1);
-        const list = blocks.map((blocks) => blocks.data.data);
-        return list;
+    async list() {
+        return await blockchainModels.find();
     }
+    async find(id) {
+        return await blockchainModels.findById(id);
+    }
+
+
+    /* async cleanUpBlockchainData() {
+         const blocks = blockchain.chain.slice(1);
+         const list = blocks.map((blocks) => blocks.data.data);
+         return list;
+     }*/
 }
