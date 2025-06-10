@@ -64,7 +64,7 @@ export default class Blockchain {
             const transactionSet = new Set();
             let rewardCount = 0;
 
-            for (let transaction of Block.data) {
+            for (let transaction of block.data) {
                 if (transaction.input.address === REWARD_ADDRESS.address) {
                     rewardCount += 1
 

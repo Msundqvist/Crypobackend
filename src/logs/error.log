@@ -25,3 +25,23 @@ Method: POST Url: /api/v1/block Date: 2025-06-10 Time: 11:20:41 Success: false -
 Method: POST Url: /api/v1/blocks Date: 2025-06-10 Time: 11:24:29 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks
 Method: GET Url: /api/v1/blocks Date: 2025-06-10 Time: 11:24:42 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks
 Method: GET Url: /api/v1/blocks Date: 2025-06-10 Time: 11:24:49 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:24:47 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/blocks/transactions Date: 2025-06-10 Time: 14:25:10 Success: false - Message: Cast to ObjectId failed for value "transactions" (type string) at path "_id" for model "Blockchain"
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:25:25 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:25:42 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:27:07 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:29:31 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:29:42 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:48:11 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: POST Url: /api/v1/transactions Date: 2025-06-10 Time: 14:49:57 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: POST Url: /api/v1/transactions Date: 2025-06-10 Time: 14:50:59 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/transactions Date: 2025-06-10 Time: 14:51:07 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: GET Url: /api/v1/transactions/mine Date: 2025-06-10 Time: 14:51:13 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions/mine
+Method: POST Url: /api/v1/transactions/mine Date: 2025-06-10 Time: 14:51:16 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions/mine
+Method: POST Url: /api/v1/wallet/transactions/mine Date: 2025-06-10 Time: 14:52:16 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transactions/mine
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-10 Time: 14:52:20 Success: false - Message: wallet is not defined
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-10 Time: 14:52:24 Success: false - Message: wallet is not defined
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-10 Time: 14:53:15 Success: false - Message: wallet is not defined
+Method: POST Url: /api/v1/wallet/transactions/mine Date: 2025-06-10 Time: 14:56:41 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transactions/mine
+Method: GET Url: /api/v1/wallet/transactions/mine Date: 2025-06-10 Time: 14:56:57 Success: false - Message: this.transactionPool.validTransactions is not a function
+Method: GET Url: /api/v1/wallet/transactions/mine Date: 2025-06-10 Time: 14:57:02 Success: false - Message: this.transactionPool.validTransactions is not a function
