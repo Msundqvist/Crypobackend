@@ -1,7 +1,5 @@
 import Blockchain from "../models/blockchain/Blockchain.mjs";
 
-TODO //ändra import när jag refacturerar addBlock till repository
-
 const blockchain = new Blockchain();
 const times = [];
 let prevTime, nextTime, nextBlock, timeDiff, average, hash;

@@ -6,3 +6,11 @@ Method: POST Url: /api/v1/blocks/ Date: 2025-06-09 Time: 20:00:23 Success: false
 Method: POST Url: /api/v1/blocks/ Date: 2025-06-09 Time: 20:04:44 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
 Method: POST Url: /api/v1/blocks/ Date: 2025-06-09 Time: 20:09:42 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
 Method: POST Url: /api/v1/blocks/ Date: 2025-06-09 Time: 20:12:20 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: POST Url: /api/v1/blocks/ Date: 2025-06-10 Time: 08:58:02 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: POST Url: /api/v1/blocks/ Date: 2025-06-10 Time: 09:02:21 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: GET Url: /api/v1/blocks/ Date: 2025-06-10 Time: 09:03:02 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: POST Url: /api/v1/blocks/ Date: 2025-06-10 Time: 09:04:06 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: POST Url: /api/v1/blocks/ Date: 2025-06-10 Time: 09:05:11 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: POST Url: /api/v1/blocks/ Date: 2025-06-10 Time: 09:34:36 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: GET Url: /api/v1/blocks/ Date: 2025-06-10 Time: 09:34:43 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/
+Method: GET Url: /api/v1/blocks Date: 2025-06-10 Time: 09:34:51 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks

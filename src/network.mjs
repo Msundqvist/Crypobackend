@@ -67,6 +67,6 @@ export default class Network {
     }
 
     publish({ channel, message }) {
-        this.pubNub.publish({ channel, message })
+        this.pubnub.publish({ channel, message })
     };
 }
