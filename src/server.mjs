@@ -23,13 +23,13 @@ app.use('/api/v1/blocks', blockchainRoutes);
 app.use('/api/v1/wallet', transactionRoutes);
 
 const synchronize = async () => {
-    let response = await fetch(`${ROOT_NODE}/api/blocks`);
+    let response = await fetch(`${ROOT_NODE}/api/v1/blocks`);
     if (response) {
         const result = await response.json();
         blockchain.replaceChain(result.data);
     }
 
-    response = await fetch(`${ROOT_NODE}/api/wallet/transactions`);
+    response = await fetch(`${ROOT_NODE}/api/v1/wallet/transactions`);
     if (response) {
         const result = await response.json();
         transactionPool.replaceMap(result.data);
