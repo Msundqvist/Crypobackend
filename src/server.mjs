@@ -22,6 +22,14 @@ let NODE_PORT;
 app.use('/api/v1/blocks', blockchainRoutes);
 app.use('/api/v1/wallet', transactionRoutes);
 
+app.all('*', (req, res, next) => {
+    next(
+        new AppError(`Vi kan tyvärr inte hitta resursen som du söker, ${req.originalUrl}`, 404)
+    );
+});
+
+app.use(errorHandler);
+
 const synchronize = async () => {
     let response = await fetch(`${ROOT_NODE}/api/v1/blocks`);
     if (response) {
@@ -43,13 +51,7 @@ if (process.env.GENERATE_NODE_PORT === 'true') {
 
 const PORT = NODE_PORT || DEFAULT_PORT;
 
-app.all('*', (req, res, next) => {
-    next(
-        new AppError(`Vi kan tyvärr inte hitta resursen som du söker, ${req.originalUrl}`, 404)
-    );
-});
 
-app.use(errorHandler);
 
 
 app.listen(PORT, () => {

@@ -10,7 +10,7 @@ export const listAllBlocks = catchErrorAsync(async (req, res, next) => {
 
 export const addBlock = catchErrorAsync(async (req, res, next) => {
     const data = req.body;
-    const block = await new BlockchainRepository().add(req.body);
+    const block = await new BlockchainRepository().add(data);
 
     server.broadcastChain();
 
