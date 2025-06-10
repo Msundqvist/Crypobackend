@@ -1,19 +1,17 @@
-import blockchainModels from "../models/schemas/blockchainModels.mjs";
-import { blockchain } from "../server.mjs";
-
+import blockchainModel from "../models/schemas/blockchainModel.mjs";
 
 export default class BlockchainRepository {
 
     async add(block) {
         block.id = crypto.randomUUID().replaceAll('-', '')
-        return await blockchainModels.create(block)
+        return await blockchainModel.create(block)
     }
 
     async list() {
-        return await blockchainModels.find();
+        return await blockchainModel.find();
     }
     async find(id) {
-        return await blockchainModels.findById(id);
+        return await blockchainModel.findById(id);
     }
 
 

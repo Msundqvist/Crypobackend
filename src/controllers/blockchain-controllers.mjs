@@ -17,7 +17,7 @@ export const addBlock = catchErrorAsync(async (req, res, next) => {
     res.status(201).json({ success: true, message: 'Block is added', data: { block: block } })
 })
 
-export const findBlock = catchErrorAsync(async (req, res) => {
+export const findBlock = catchErrorAsync(async (req, res, next) => {
     const { id } = req.params;
     const block = await new BlockchainRepository().find(id)
     res.status(200).json({ success: true, statusCode: 200, data: block })
