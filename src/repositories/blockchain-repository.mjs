@@ -15,9 +15,4 @@ export default class BlockchainRepository {
     }
 
 
-    /* async cleanUpBlockchainData() {
-         const blocks = blockchain.chain.slice(1);
-         const list = blocks.map((blocks) => blocks.data.data);
-         return list;
-     }*/
 }

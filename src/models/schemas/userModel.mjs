@@ -1,24 +1,22 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
     firstName: {
         type: String,
-        required: [true, 'Förnamn måste anges']
+        required: [true, 'Förnamn måste anges'],
     },
     lastName: {
         type: String,
-        required: [true, 'Efternamn måste anges']
+        required: [true, 'Efternamn måste anges'],
     },
     email: {
         type: String,
-        index: true,
-        unique: true,
-        required: [true, 'Email måste anges']
+        required: [true, 'E-post måste anges'],
     },
     password: {
         type: String,
-        required: [true, 'Lösenord måste anges']
-    }
-})
+        required: [true, 'Lösenord måste anges'],
+    },
+});
 
-export default mongoose.model('User', userSchema)
+export default mongoose.model('User', userSchema);
