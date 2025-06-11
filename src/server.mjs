@@ -8,6 +8,7 @@ import Wallet from "./models/wallet/Wallet.mjs";
 import blockchainRoutes from './routes/blockchain-routes.mjs';
 import transactionRoutes from "./routes/transaction-routes.mjs";
 import userRoutes from './routes/users-routes.mjs'
+import authRoutes from './routes/auth-routes.mjs'
 
 export const blockchain = new Blockchain();
 export const transactionPool = new TransactionPool();
@@ -23,6 +24,7 @@ let NODE_PORT;
 app.use('/api/v1/blocks', blockchainRoutes);
 app.use('/api/v1/wallet', transactionRoutes);
 app.use('/api/v1/users', userRoutes)
+app.use('/api/v1/auth', authRoutes)
 
 app.all('*', (req, res, next) => {
     next(

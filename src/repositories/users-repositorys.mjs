@@ -7,6 +7,12 @@ export default class UserRepository {
         return await userModel.create({ firstName, lastName, email, password });
     }
 
+    async find(email, login) {
+        return login === true
+            ? await userModel.findOne({ email }).select('+password')
+            : await userModel.findOne({ email });
+    }
+
     async list() {
         return await userModel.find();
     }
