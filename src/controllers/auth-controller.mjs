@@ -1,6 +1,8 @@
+import jwt from "jsonwebtoken";
 import { catchErrorAsync } from "../utilities/catchErrorAsync.mjs";
 import AppError from "../models/error/appError.mjs";
 import UserRepository from "../repositories/users-repositorys.mjs";
+
 
 export const loginUser = catchErrorAsync(async (req, res, next) => {
     const { email, password } = req.body;
@@ -14,5 +16,13 @@ export const loginUser = catchErrorAsync(async (req, res, next) => {
     if (!user || !(await user.checkPassword(password, user.password))) {
         return next(new AppError('e-poost eller lösenord är felaktigt', 401))
     }
-    res.status(200).json({ success: true, statusCode: 200, data: 'vi är nästan klara' })
+
+    const token = createToken(user._id)
+    res.status(200).json({ success: true, statusCode: 200, data: { token: token } })
 });
+
+const createToken = (userId) => {
+    return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
+        expiresIn: process.env.JWT_EXPIRES
+    })
+}

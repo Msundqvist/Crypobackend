@@ -9,3 +9,4 @@ Method: POST Url: /api/v1/users Date: 2025-06-11 Time: 11:19:05 Success: false -
 Method: GET Url: /api/v1/auth Date: 2025-06-11 Time: 11:19:30 Success: false - Message: e-post eller lösenord saknas
 Method: POST Url: /api/v1/auth Date: 2025-06-11 Time: 11:21:44 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
 Method: GET Url: /api/v1/auth Date: 2025-06-11 Time: 11:24:38 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/auth Date: 2025-06-11 Time: 13:23:10 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
