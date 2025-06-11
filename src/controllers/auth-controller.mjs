@@ -14,5 +14,5 @@ export const loginUser = catchErrorAsync(async (req, res, next) => {
     if (!user || !(await user.checkPassword(password, user.password))) {
         return next(new AppError('e-poost eller lösenord är felaktigt', 401))
     }
-    res.status(200).json({ success: true, statusCode: 200, data: '' })
+    res.status(200).json({ success: true, statusCode: 200, data: 'vi är nästan klara' })
 });
