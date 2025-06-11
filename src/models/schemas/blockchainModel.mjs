@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const blockchainSchema = new mongoose.Schema({
-    chain: []
+    chain: { type: Array }
 })
 
-export default mongoose.model('Blockchain', blockchainSchema)
+export default mongoose.model('blockchain', blockchainSchema)
