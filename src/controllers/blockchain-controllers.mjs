@@ -4,8 +4,8 @@ import { catchErrorAsync } from '../utilities/catchErrorAsync.mjs';
 
 
 export const listAllBlocks = catchErrorAsync(async (req, res, next) => {
-    const blockchain = await new BlockchainRepository().list();
-    res.status(200).json({ success: true, statusCode: 200, data: blockchain })
+    const blocks = await new BlockchainRepository().list();
+    res.status(200).json({ success: true, statusCode: 200, data: { block: blocks } })
 })
 
 export const addBlock = catchErrorAsync(async (req, res, next) => {

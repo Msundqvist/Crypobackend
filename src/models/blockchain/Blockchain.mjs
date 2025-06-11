@@ -53,8 +53,7 @@ export default class Blockchain {
         if (callback) callback();
 
         this.chain = chain;
-        // spara ner till databasen
-
+        this.chain.add({ chain })
     }
 
     validateTransacionData({ chain }) {

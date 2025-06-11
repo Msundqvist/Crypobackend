@@ -10,3 +10,6 @@ Method: GET Url: /api/v1/auth Date: 2025-06-11 Time: 11:19:30 Success: false - M
 Method: POST Url: /api/v1/auth Date: 2025-06-11 Time: 11:21:44 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
 Method: GET Url: /api/v1/auth Date: 2025-06-11 Time: 11:24:38 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
 Method: GET Url: /api/v1/auth Date: 2025-06-11 Time: 13:23:10 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: POST Url: /api/v1/blocks/68481da5103d01b9a465346b Date: 2025-06-11 Time: 13:45:33 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/68481da5103d01b9a465346b
+Method: GET Url: /api/v1/blocks/mine Date: 2025-06-11 Time: 13:59:49 Success: false - Message: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Blockchain"
+Method: GET Url: /api/v1/blocks/mine/a786032a482a4666ab996dfac5ee3ae6 Date: 2025-06-11 Time: 14:00:12 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/mine/a786032a482a4666ab996dfac5ee3ae6
