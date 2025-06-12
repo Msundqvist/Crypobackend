@@ -31,3 +31,20 @@ Method: GET Url: /api/v1/blocks Date: 2025-06-12 Time: 10:04:34 Success: false -
 Method: GET Url: /api/v1/blocks Date: 2025-06-12 Time: 10:26:43 Success: false - Message: jwt malformed
 Method: POST Url: /api/v1/auth Date: 2025-06-12 Time: 10:27:36 Success: false - Message: e-poost eller lösenord är felaktigt
 Method: GET Url: /api/v1/blocks Date: 2025-06-12 Time: 10:28:01 Success: false - Message: jwt malformed
+Method: POST Url: /api/v1/blocks/minr Date: 2025-06-12 Time: 15:10:05 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/minr
+Method: POST Url: /api/v1/blocks/minr Date: 2025-06-12 Time: 15:11:06 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/minr
+Method: POST Url: /api/v1/blocks/minr Date: 2025-06-12 Time: 15:11:23 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/minr
+Method: POST Url: /api/v1/blocks/minr Date: 2025-06-12 Time: 15:11:39 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/minr
+Method: POST Url: /api/v1/blocks/minr Date: 2025-06-12 Time: 15:11:56 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/minr
+Method: POST Url: /api/v1/blocks/minr Date: 2025-06-12 Time: 15:12:19 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/minr
+Method: POST Url: /api/v1/blocks/minr Date: 2025-06-12 Time: 15:12:48 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/blocks/minr
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:13:37 Success: false - Message: Cannot read properties of null (reading 'role')
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:24:31 Success: false - Message: chain.addBlock is not a function
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:25:16 Success: false - Message: chain.create is not a function
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:26:00 Success: false - Message: Cannot read properties of undefined (reading 'create')
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:26:22 Success: false - Message: Cannot read properties of undefined (reading 'chain')
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:26:34 Success: false - Message: Cannot read properties of undefined (reading 'block')
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:26:46 Success: false - Message: Cannot read properties of undefined (reading 'chain')
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:27:08 Success: false - Message: blockchain.chain is not a function
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:27:40 Success: false - Message: chain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:28:24 Success: false - Message: Cannot read properties of undefined (reading 'block')

@@ -41,7 +41,7 @@ export default class Blockchain {
         return true;
     }
 
-    replaceChain(chain, shouldValidate, callback) {
+    replaceChain(chain, shouldValidate, callback, block) {
 
         if (chain.length <= this.chain.length) return;
 
@@ -55,8 +55,7 @@ export default class Blockchain {
 
         this.chain = chain;
         // spara ner datat
-        console.log(this.blockchain.chain)
-        blockchain.create({ chain: this.chain })
+
     }
 
     validateTransacionData({ chain }) {
