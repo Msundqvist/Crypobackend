@@ -3,7 +3,7 @@ import Block from './Block.mjs';
 import { REWARD_ADDRESS, MINING_REWARD } from "../../utilities/config.mjs";
 import Transaction from '../wallet/Transaction.mjs';
 import Wallet from '../wallet/Wallet.mjs';
-import blockchainModel from "../schemas/blockchainModel.mjs";
+import blockchain from "../schemas/blockchainModel.mjs";
 
 export default class Blockchain {
     constructor() {
@@ -55,7 +55,8 @@ export default class Blockchain {
 
         this.chain = chain;
         // spara ner datat
-        blockchainModel.findOneAndUpdate({ chain: [] })
+        console.log(this.blockchain.chain)
+        blockchain.create({ chain: this.chain })
     }
 
     validateTransacionData({ chain }) {

@@ -18,7 +18,7 @@ export default class Miner {
         );
 
         this.blockchain.addBlock({ data: validTransactions });
-        console.log(this.blockchain.chain)
+        //console.log(this.blockchain.chain)
         blockchain.create({ chain: this.blockchain.chain })
         this.server.broadcastChain();
 

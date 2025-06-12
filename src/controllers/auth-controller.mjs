@@ -20,6 +20,18 @@ export const loginUser = catchErrorAsync(async (req, res, next) => {
     const token = createToken(user._id)
     res.status(200).json({ success: true, statusCode: 200, data: { token: token } })
 });
+export const protect = catchErrorAsync(async (req, res, next) => {
+    console.log('Jag skyddar resursen...')
+    let token;
+
+    if (req.headers.authorization && req.headers.authorization.toLowerCase().startsWith('bearer')) {
+        token = req.headers.authorization.split('')[1];
+    }
+    if (!token) {
+        return next(new AppError('Du måste vara inloggad', 401))
+    }
+    next();
+})
 
 const createToken = (userId) => {
     return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
