@@ -41,7 +41,7 @@ export const protect = catchErrorAsync(async (req, res, next) => {
 
     next();
 })
-TODO // lägga dessa filer i middleware...
+
 export const authorize = (...roles) => {
     return (req, res, next) => {
         if (!roles.includes(req.user.role)) {
