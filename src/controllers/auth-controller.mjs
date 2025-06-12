@@ -22,7 +22,7 @@ export const loginUser = catchErrorAsync(async (req, res, next) => {
     res.status(200).json({ success: true, statusCode: 200, data: { token: token } })
 });
 export const protect = catchErrorAsync(async (req, res, next) => {
-    console.log('Jag skyddar resursen...')
+
     let token;
 
     if (req.headers.authorization && req.headers.authorization.toLowerCase().startsWith('bearer')) {
@@ -31,12 +31,25 @@ export const protect = catchErrorAsync(async (req, res, next) => {
     if (!token) {
         return next(new AppError('Du måste vara inloggad', 401))
     }
-    console.log(token)
 
     const decoded = await verifyToken(token)
-    console.log(decoded)
+
+    const user = await new UserRepository().findById(decoded.id)
+
+
+    req.user = user;
+
     next();
 })
+TODO // lägga dessa filer i middleware...
+export const authorize = (...roles) => {
+    return (req, res, next) => {
+        if (!roles.includes(req.user.role)) {
+            return next(new AppError('Du har inte behörighet till resursen', 403))
+        }
+        next();
+    }
+}
 
 const createToken = (userId) => {
     return jwt.sign({ id: userId }, process.env.JWT_SECRET, {

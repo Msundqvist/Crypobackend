@@ -18,12 +18,18 @@ const userSchema = new mongoose.Schema({
         lowercase: true,
         validate: [validator.isEmail, 'Ange en giltig e-postadress']
     },
+    role: {
+        type: String,
+        enum: ['user', 'miner', 'admin'],
+        default: 'user'
+    },
     password: {
         type: String,
         required: [true, 'Lösenord måste anges'],
         minlength: 8,
         select: false
     },
+
 });
 
 userSchema.pre('save', async function (next) {

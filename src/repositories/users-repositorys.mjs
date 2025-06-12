@@ -14,7 +14,12 @@ export default class UserRepository {
             : await userModel.findOne({ email });
     }
 
+    async findById(id) {
+        return await userModel.findById(id);
+    }
+
     async list() {
         return await userModel.find();
     }
+
 }
