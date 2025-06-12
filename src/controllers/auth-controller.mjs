@@ -1,3 +1,4 @@
+import { promisify } from 'util';
 import jwt from "jsonwebtoken";
 import { catchErrorAsync } from "../utilities/catchErrorAsync.mjs";
 import AppError from "../models/error/appError.mjs";
@@ -25,11 +26,15 @@ export const protect = catchErrorAsync(async (req, res, next) => {
     let token;
 
     if (req.headers.authorization && req.headers.authorization.toLowerCase().startsWith('bearer')) {
-        token = req.headers.authorization.split('')[1];
+        token = req.headers.authorization.split(' ')[1];
     }
     if (!token) {
         return next(new AppError('Du måste vara inloggad', 401))
     }
+    console.log(token)
+
+    const decoded = await verifyToken(token)
+    console.log(decoded)
     next();
 })
 
@@ -37,4 +42,8 @@ const createToken = (userId) => {
     return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRES
     })
+}
+
+const verifyToken = async (token) => {
+    return await promisify(jwt.verify)(token, process.env.JWT_SECRET)
 }

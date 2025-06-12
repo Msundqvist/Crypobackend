@@ -19,3 +19,15 @@ Method: GET Url: /api/v1/blocks/mine Date: 2025-06-11 Time: 14:11:33 Success: fa
 Method: POST Url: /api/v1/wallet/transactions/ Date: 2025-06-11 Time: 14:42:25 Success: false - Message: consol is not defined
 Method: POST Url: /api/v1/wallet/transactions/mine Date: 2025-06-11 Time: 14:47:34 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transactions/mine
 Method: POST Url: /api/v1/wallet/transactions/mine Date: 2025-06-11 Time: 14:50:51 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transactions/mine
+Method: POST Url: /api/v1/users Date: 2025-06-12 Time: 09:52:49 Success: false - Message: User validation failed: lastName: Efternamn måste anges, firstName: Förnamn måste anges
+Method: POST Url: /api/v1/users Date: 2025-06-12 Time: 09:52:54 Success: false - Message: User validation failed: lastName: Efternamn måste anges, firstName: Förnamn måste anges
+Method: GET Url: /api/v1/auth Date: 2025-06-12 Time: 10:00:15 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: POST Url: /api/v1/auth Date: 2025-06-12 Time: 10:00:58 Success: false - Message: e-poost eller lösenord är felaktigt
+Method: GET Url: /api/v1/auth Date: 2025-06-12 Time: 10:01:15 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/auth Date: 2025-06-12 Time: 10:03:13 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/auth Date: 2025-06-12 Time: 10:03:31 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/blocks Date: 2025-06-12 Time: 10:04:25 Success: false - Message: jwt malformed
+Method: GET Url: /api/v1/blocks Date: 2025-06-12 Time: 10:04:34 Success: false - Message: Du måste vara inloggad
+Method: GET Url: /api/v1/blocks Date: 2025-06-12 Time: 10:26:43 Success: false - Message: jwt malformed
+Method: POST Url: /api/v1/auth Date: 2025-06-12 Time: 10:27:36 Success: false - Message: e-poost eller lösenord är felaktigt
+Method: GET Url: /api/v1/blocks Date: 2025-06-12 Time: 10:28:01 Success: false - Message: jwt malformed
