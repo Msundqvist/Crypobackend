@@ -3,9 +3,7 @@ import userModel from "../models/schemas/userModel.mjs";
 export default class UserRepository {
 
     async add(user) {
-        await userModel.create(user)
-        user.password = undefined;
-        return user;
+        return await userModel.create(user)
     }
 
     async find(email, login) {
