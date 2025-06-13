@@ -1,9 +1,15 @@
 import express from 'express'
 import cors from 'cors';
+import rateLimit from 'express-rate-limit';
+import mongoSanitize from 'express-mongo-sanitize';
+import { xss } from 'express-xss-sanitizer';
+import helmet from 'helmet';
+import hpp from 'hpp';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { connectDb } from './db/database.mjs';
+
 
 
 const filename = fileURLToPath(import.meta.url);
@@ -13,21 +19,31 @@ global.__appdir = dirname;
 dotenv.config({ path: './config/config.env' })
 
 await connectDb();
+
+const limiter = rateLimit({
+    max: 100,
+    windowMs: 60 * 60 * 1000,
+    message: 'Stop try to kill me!'
+})
+
 const app = express();
 
-app.use(cors());
+app.use(helmet());
 
-app.use(express.json());
+app.use(cors({
+    origin: 'http://localhost:5500',
+    methods: 'GET, POST'
+}));
 
-app.use((req, res, next) => {
-    req.requestTime = new Date().toLocaleString();
-    console.log(req.requestTime)
-    console.log('Header Info:', req.headers)
+app.use('/api/', limiter)
 
-    const token = req.headers.authorization;
-    console.log('TOKEN', token)
+app.use(express.json({ limit: '10kb' }));
 
-    next();
-})
+app.use(mongoSanitize());
+
+app.use(xss())
+
+app.use(hpp())
+
 
 export { app }
