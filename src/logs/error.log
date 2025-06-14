@@ -48,3 +48,10 @@ Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:26:46 Success: f
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:27:08 Success: false - Message: blockchain.chain is not a function
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:27:40 Success: false - Message: chain is not defined
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-12 Time: 15:28:24 Success: false - Message: Cannot read properties of undefined (reading 'block')
+Method: POST Url: /api/v1/auth Date: 2025-06-14 Time: 15:06:48 Success: false - Message: e-poost eller lösenord är felaktigt
+Method: GET Url: /api/v1/auth Date: 2025-06-14 Time: 15:07:04 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/user Date: 2025-06-14 Time: 15:07:18 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/user
+Method: GET Url: /api/v1/user Date: 2025-06-14 Time: 15:07:31 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/user
+Method: POST Url: /api/v1/user Date: 2025-06-14 Time: 15:07:36 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/user
+Method: POST Url: /api/v1/users Date: 2025-06-14 Time: 15:09:08 Success: false - Message: User validation failed: lastName: Efternamn måste anges, firstName: Förnamn måste anges
+Method: GET Url: /api/v1/users/684d74fcbd64130853a16bb6 Date: 2025-06-14 Time: 15:11:56 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/users/684d74fcbd64130853a16bb6
