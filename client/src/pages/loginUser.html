@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/client/src/app.js" defer></script>
     <title>login</title>
   </head>
   <body>
     <main>
       <h1 class="page-title">Login User</h1>
-      <form id="loginUserForm">
+      <form id="login">
         <div class="login-form">
           <div class="form-controll">
             <label for="Email">Email: </label>
             <input
               type="email"
               name="email"
-              id="userName"
+              id="username"
               placeholder="Email" />
           </div>
           <div class="form-controll">
             <label for="Password">Password: </label>
-            <input type="password" name="password id="passwordLogin">
+            <input type="password" name="password" id="password" />
           </div>
-          <button class="btn btn-rounded">Logga in</button>
+          <input type="submit" value="Logga in" />
           <button class="btn btn-rounded">Skapa användare</button>
         </div>
       </form>

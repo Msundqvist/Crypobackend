@@ -1,6 +1,6 @@
-const form = document.getElementById(loginUserForm)
-const userEmail = document.getElementById(userName)
-const userPassword = document.getElementById(password)
+const form = document.getElementById('login')
+const userEmail = document.querySelector('#username')
+const userPassword = document.querySelector('#password')
 
 const initApp = async () => {
 }
@@ -10,7 +10,7 @@ const loginUser = async (e) => {
     e.preventDefault();
     try {
         const user = {
-            email: userName.value,
+            email: username.value,
             password: password.value
         }
 
@@ -20,14 +20,16 @@ const loginUser = async (e) => {
             headers: {
                 'Content-Type': 'application/json',
 
-                body: JSON.stringify(user)
-            }
+
+            },
+            body: JSON.stringify(user)
 
         })
 
         if (response.ok) {
             const result = await response.json();
             console.log(result)
+            localStorage.setItem('jwt', result.data.token)
         }
 
     } catch (error) {

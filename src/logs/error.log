@@ -55,3 +55,39 @@ Method: GET Url: /api/v1/user Date: 2025-06-14 Time: 15:07:31 Success: false - M
 Method: POST Url: /api/v1/user Date: 2025-06-14 Time: 15:07:36 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/user
 Method: POST Url: /api/v1/users Date: 2025-06-14 Time: 15:09:08 Success: false - Message: User validation failed: lastName: Efternamn måste anges, firstName: Förnamn måste anges
 Method: GET Url: /api/v1/users/684d74fcbd64130853a16bb6 Date: 2025-06-14 Time: 15:11:56 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/users/684d74fcbd64130853a16bb6
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-16 Time: 20:25:00 Success: false - Message: Cannot read properties of null (reading 'role')
+Method: GET Url: /api/v1/auth Date: 2025-06-16 Time: 20:25:28 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-16 Time: 20:26:25 Success: false - Message: Cannot read properties of null (reading 'role')
+Method: POST Url: /api/v1/transactions Date: 2025-06-16 Time: 20:26:52 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transactions
+Method: POST Url: /api/v1/transaction Date: 2025-06-16 Time: 20:26:57 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/transaction
+Method: POST Url: /api/v1/wallet/transactions/mine Date: 2025-06-16 Time: 20:28:15 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transactions/mine
+Method: POST Url: /api/v1/wallet/mine Date: 2025-06-16 Time: 20:28:23 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/mine
+Method: GET Url: /api/v1/wallet/mine Date: 2025-06-16 Time: 20:28:27 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/mine
+Method: GET Url: /api/v1/wallet/transaction/mine Date: 2025-06-16 Time: 20:28:40 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transaction/mine
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 20:47:07 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 20:59:58 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:01:22 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:03:34 Success: false - Message: e-post eller lösenord saknas
+Method: GET Url: /api/v1/auth Date: 2025-06-16 Time: 21:04:46 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /favicon.ico Date: 2025-06-16 Time: 21:04:47 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /favicon.ico
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:06:23 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:07:10 Success: false - Message: e-post eller lösenord saknas
+Method: GET Url: /api/v1/auth Date: 2025-06-16 Time: 21:08:28 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:14:47 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:19:32 Success: false - Message: e-post eller lösenord saknas
+Method: GET Url: /api/v1/auth Date: 2025-06-16 Time: 21:20:13 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:22:07 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:22:09 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:26:02 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:29:20 Success: false - Message: e-post eller lösenord saknas
+Method: GET Url: /api/v1/auth Date: 2025-06-16 Time: 21:29:41 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/wallet/transactions Date: 2025-06-16 Time: 21:30:08 Success: false - Message: Du måste vara inloggad för att nå resursen
+Method: GET Url: /api/v1/auth Date: 2025-06-16 Time: 21:32:00 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/auth/ Date: 2025-06-16 Time: 21:33:57 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth/
+Method: GET Url: /api/v1/auth/ Date: 2025-06-16 Time: 21:38:02 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth/
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:38:19 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:38:21 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:38:22 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:40:05 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/users Date: 2025-06-16 Time: 21:41:34 Success: false - Message: User validation failed: password: Lösenord måste anges, email: E-post måste anges, lastName: Efternamn måste anges, firstName: Förnamn måste anges
+Method: POST Url: /api/v1/users Date: 2025-06-16 Time: 21:42:31 Success: false - Message: User validation failed: lastName: Efternamn måste anges, firstName: Förnamn måste anges

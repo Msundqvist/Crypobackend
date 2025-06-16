@@ -30,10 +30,7 @@ const app = express();
 
 app.use(helmet());
 
-app.use(cors({
-    origin: 'http://localhost:5500',
-    methods: 'GET, POST'
-}));
+app.use(cors());
 
 app.use('/api/', limiter)
 
