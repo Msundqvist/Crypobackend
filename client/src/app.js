@@ -2,6 +2,7 @@ const form = document.getElementById('login')
 const userEmail = document.querySelector('#username')
 const userPassword = document.querySelector('#password')
 
+
 const initApp = async () => {
 }
 
@@ -19,8 +20,6 @@ const loginUser = async (e) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-
-
             },
             body: JSON.stringify(user)
 
@@ -32,13 +31,11 @@ const loginUser = async (e) => {
             localStorage.setItem('jwt', result.data.token)
         }
 
+        location.href = './blockchainTransactions.html'
+
     } catch (error) {
         console.error(error);
     }
-
-
-
-
 }
 
 

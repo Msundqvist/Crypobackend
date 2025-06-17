@@ -8,6 +8,24 @@
   <body>
     <main>
       <h1 class="page-title">Blockchain</h1>
+      <form id="transactions">
+        <div class="transaction-form">
+          <div class="form-controll">
+            <label for="recipient">Recipient: </label>
+            <input
+              type="text"
+              name="recipient"
+              id="recipient"
+              placeholder="Recipient" />
+          </div>
+          <div class="form-controll">
+            <label for="amount">Amount: </label>
+            <input type="number" name="amount" id="amount" />
+          </div>
+          <button type="submit" class="btn btn-rounded">Add transaction</button>
+          <button type="click" class="btn btn-rounded">Mine transaction</button>
+        </div>
+      </form>
     </main>
   </body>
 </html>

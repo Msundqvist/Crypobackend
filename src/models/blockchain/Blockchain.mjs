@@ -3,7 +3,6 @@ import Block from './Block.mjs';
 import { REWARD_ADDRESS, MINING_REWARD } from "../../utilities/config.mjs";
 import Transaction from '../wallet/Transaction.mjs';
 import Wallet from '../wallet/Wallet.mjs';
-import blockchain from "../schemas/blockchainModel.mjs";
 
 export default class Blockchain {
     constructor() {
@@ -41,7 +40,7 @@ export default class Blockchain {
         return true;
     }
 
-    replaceChain(chain, shouldValidate, callback, block) {
+    replaceChain(chain, shouldValidate, callback) {
 
         if (chain.length <= this.chain.length) return;
 
@@ -53,8 +52,7 @@ export default class Blockchain {
 
         if (callback) callback();
 
-        this.chain = chain;
-        // spara ner datat
+        this.chain = chain
 
     }
 
