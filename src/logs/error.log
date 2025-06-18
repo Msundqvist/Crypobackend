@@ -91,3 +91,54 @@ Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:38:22 Success: false - 
 Method: POST Url: /api/v1/auth Date: 2025-06-16 Time: 21:40:05 Success: false - Message: e-post eller lösenord saknas
 Method: POST Url: /api/v1/users Date: 2025-06-16 Time: 21:41:34 Success: false - Message: User validation failed: password: Lösenord måste anges, email: E-post måste anges, lastName: Efternamn måste anges, firstName: Förnamn måste anges
 Method: POST Url: /api/v1/users Date: 2025-06-16 Time: 21:42:31 Success: false - Message: User validation failed: lastName: Efternamn måste anges, firstName: Förnamn måste anges
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:26:55 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:31:47 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:32:15 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:34:28 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:35:10 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:36:05 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:11 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:13 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:14 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:16 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:17 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:17 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:18 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:19 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:20 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:21 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:23 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:24 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: GET Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:37:30 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: GET Url: /favicon.ico Date: 2025-06-18 Time: 21:37:31 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /favicon.ico
+Method: GET Url: /api/v1/auth Date: 2025-06-18 Time: 21:37:52 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/auth
+Method: GET Url: /api/v1/wallet/transaction Date: 2025-06-18 Time: 21:39:07 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transaction
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:40:54 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:41:08 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:59:28 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:59:29 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:59:30 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:59:31 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 21:59:32 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: GET Url: /api/v1/wallet/transaction Date: 2025-06-18 Time: 22:00:01 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/v1/wallet/transaction
+Method: GET Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:00:29 Success: false - Message: invalid signature
+Method: POST Url: /api/wallet/transactions Date: 2025-06-18 Time: 22:01:47 Success: false - Message: Vi kan tyvärr inte hitta resursen som du söker, /api/wallet/transactions
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:02:33 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:07:49 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:00 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:01 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:02 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:04 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:05 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:06 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:08 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:09 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:10 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:08:11 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:27 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:28 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:30 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:31 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:32 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:33 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:34 Success: false - Message: Du måste vara inloggad

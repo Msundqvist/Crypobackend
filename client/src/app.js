@@ -30,8 +30,7 @@ const loginUser = async (e) => {
             console.log(result)
             localStorage.setItem('jwt', result.data.token)
         }
-
-        location.href = './blockchainTransactions.html'
+          location.href = './blockchainTransactions.html'
 
     } catch (error) {
         console.error(error);
