@@ -168,3 +168,17 @@ Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:09:18 Success: f
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:09:49 Success: false - Message: Cannot access 'block' before initialization
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:11:47 Success: false - Message: block is not defined
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:12:32 Success: false - Message: block is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:52:35 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:54:31 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:55:06 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:56:55 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:57:28 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:58:11 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:58:32 Success: false - Message: chain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:58:44 Success: false - Message: data is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:59:10 Success: false - Message: data is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:59:27 Success: false - Message: chain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:59:58 Success: false - Message: chain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:00:17 Success: false - Message: chain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:01:25 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:01:54 Success: false - Message: Cannot access 'block' before initialization
