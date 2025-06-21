@@ -142,3 +142,29 @@ Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:31 Su
 Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:32 Success: false - Message: Du måste vara inloggad
 Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:33 Success: false - Message: Du måste vara inloggad
 Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-18 Time: 22:09:34 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:49:59 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:00 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:02 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:03 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:04 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:05 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:07 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:08 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:09 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:10 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:50:11 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:52:34 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/wallet/transactions Date: 2025-06-21 Time: 12:55:52 Success: false - Message: Du måste vara inloggad
+Method: POST Url: /api/v1/auth Date: 2025-06-21 Time: 13:21:20 Success: false - Message: e-post eller lösenord saknas
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 15:59:25 Success: false - Message: invalid signature
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:00:13 Success: false - Message: blockchain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:00:44 Success: false - Message: blockchain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:01:32 Success: false - Message: Cannot destructure property 'data' of 'undefined' as it is undefined.
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:02:34 Success: false - Message: blockChain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:02:52 Success: false - Message: blockChain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:03:03 Success: false - Message: blockChain is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:08:26 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:09:18 Success: false - Message: Cannot set properties of undefined (setting 'id')
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:09:49 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:11:47 Success: false - Message: block is not defined
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:12:32 Success: false - Message: block is not defined
