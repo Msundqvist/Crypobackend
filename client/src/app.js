@@ -28,8 +28,8 @@ const loginUser = async (e) => {
         if (response.ok) {
             const result = await response.json();
             console.log('Login successful:', result);
-            localStorage.setItem('jwt', result.data.token);  // Save the token
-            location.href = './blockchainTransactions.html'; // Redirect ONLY after successful login
+            localStorage.setItem('jwt', result.data.token);
+            location.href = './blockchainTransactions.html';
         } else {
             const errorData = await response.json();
             console.error('Login failed:', errorData.message || response.statusText);
