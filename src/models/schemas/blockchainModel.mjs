@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const blockchainSchema = new mongoose.Schema({
-    chain: { type: Array }
+    blockchain: [mongoose.Schema.Types.Mixed]
 })
 
 export default mongoose.model('blockchain', blockchainSchema)

@@ -182,3 +182,7 @@ Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 16:59:58 Success: f
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:00:17 Success: false - Message: chain is not defined
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:01:25 Success: false - Message: Cannot access 'block' before initialization
 Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:01:54 Success: false - Message: Cannot access 'block' before initialization
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:53:07 Success: false - Message: Cannot read properties of undefined (reading 'chain')
+Method: POST Url: /api/v1/blocks/mine Date: 2025-06-21 Time: 17:53:20 Success: false - Message: Cannot read properties of undefined (reading 'block')
+Method: GET Url: /api/v1/wallet/transactions/mine Date: 2025-06-22 Time: 16:06:23 Success: false - Message: blockchain is not defined
+Method: POST Url: /api/v1/auth Date: 2025-06-22 Time: 16:11:43 Success: false - Message: e-poost eller lösenord är felaktigt

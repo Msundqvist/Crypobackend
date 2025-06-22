@@ -29,6 +29,7 @@ export const addTransaction = (req, res) => {
 
     transactionPool.addTransaction(transaction);
 
+
     server.broadcastTransaction(transaction);
 
     res.status(201).json({ success: true, statusCode: 201, data: transaction });

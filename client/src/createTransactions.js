@@ -3,6 +3,7 @@ const form = document.getElementById('transactions');
 const recipient = document.querySelector('#recipient');
 const amount = document.querySelector('#amount');
 const btn = document.querySelector('#listAllTransactions')
+const mineBtn = document.querySelector('#mineTransactions')
 const initApp = () => {
     const token = localStorage.getItem('jwt');
     if (!token) {
@@ -62,6 +63,31 @@ const listAllTransactions = async () => {
 
 }
 
+const mineTransactions = async () => {
+    const token = localStorage.getItem('jwt');
+
+    try {
+        const response = await fetch('http://localhost:3000/api/v1/wallet/transactions/mine', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+            },
+        });
+
+        const data = await response.json();
+        console.log(data)
+
+        return {
+            ok: response.ok,
+            data,
+        };
+
+
+    } catch (error) {
+        throw new Error('Något blev galet');
+    }
+}
+
 const handleCreateTransaction = async (e) => {
     e.preventDefault();
 
@@ -93,3 +119,4 @@ const handleCreateTransaction = async (e) => {
 document.addEventListener('DOMContentLoaded', initApp);
 form.addEventListener('submit', handleCreateTransaction);
 btn.addEventListener('click', listAllTransactions)
+mineBtn.addEventListener('click', mineTransactions)

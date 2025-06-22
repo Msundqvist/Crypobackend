@@ -15,6 +15,8 @@ const loginUser = async (e) => {
             password: password.value
         }
 
+
+
         const response = await fetch('http://localhost:3000/api/v1/auth', {
 
             method: 'POST',

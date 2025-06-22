@@ -13,6 +13,8 @@ export const addBlock = catchErrorAsync(async (req, res) => {
 
     blockchain.addBlock({ data });
 
+    await new BlockchainRepository().add({ blockchain: blockchain.chain })
+
     server.broadcastChain();
 
     res
