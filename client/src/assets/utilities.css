@@ -1,11 +1,3 @@
-.btn-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 1rem 0 0.6rem 0;
-}
-
 .btn {
   display: inline-block;
   margin: 0.3rem 0;
