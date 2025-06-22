@@ -1,7 +1,7 @@
 const form = document.getElementById('login')
 const userEmail = document.querySelector('#username')
 const userPassword = document.querySelector('#password')
-
+const btn = document.querySelector('#createNewUser')
 
 const initApp = async () => {
 }
@@ -29,7 +29,6 @@ const loginUser = async (e) => {
 
         if (response.ok) {
             const result = await response.json();
-            console.log('Login successful:', result);
             localStorage.setItem('jwt', result.data.token);
             location.href = './blockchainTransactions.html';
         } else {
@@ -42,6 +41,12 @@ const loginUser = async (e) => {
     }
 }
 
+const createUserForm = async () => {
+    location.href = './createUser.html'
+}
+
 
 document.addEventListener('DOMContentLoaded', initApp)
 form.addEventListener('submit', loginUser)
+btn.addEventListener('click', createUserForm)
+

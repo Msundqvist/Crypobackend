@@ -3,7 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../createUser.js" defer></script>
     <title>Create user</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Create User</h1>
+      <form id="newUserForm">
+        <div class="user-form">
+          <div class="form-controll">
+            <label for="FirstName">Firstname: </label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Firstname" />
+          </div>
+          <div class="form-controll">
+            <label for="LastName">Lastname: </label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="LastName" />
+          </div>
+          <div class="form-controll">
+            <label for="email ">email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="form-controll">
+            <label for="role ">Roll: </label>
+            <input
+              type="text"
+              name="role"
+              id="role"
+              placeholder="admin, miner or user" />
+          </div>
+          <div class="form-controll">
+            <label for="Password">Password: </label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button type="submit" class="btn btn-rounded">Skapa användare</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
