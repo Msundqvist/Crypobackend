@@ -1,7 +1,7 @@
-import { INITIAL_BALANCE } from "../../utilities/config.mjs";
-import { keyMgr } from "../../utilities/keyManager.mjs";
-import { generateHash } from "../../utilities/hash.mjs";
-import Transaction from "./Transaction.mjs";
+import { INITIAL_BALANCE } from '../../utilities/config.mjs';
+import { keyMgr } from '../../utilities/keyManager.mjs';
+import { generateHash } from '../../utilities/hash.mjs';
+import Transaction from './Transaction.mjs';
 
 export default class Wallet {
     constructor() {
@@ -11,37 +11,42 @@ export default class Wallet {
     }
 
     static calculateBalance({ chain, address }) {
-        let total = 0;
-        hasMadeAtransaction = false;
+        let total = 0,
+            hasMadeTransaction = false;
 
         for (let i = chain.length - 1; i > 0; i--) {
-            const block = chain[i]
+            const block = chain[i];
 
             for (let transaction of block.data) {
                 if (transaction.input.address === address) {
-                    hasMadeAtransaction = true;
+                    hasMadeTransaction = true;
                 }
 
                 const amount = transaction.outputMap[address];
 
-                if (amount) total += amount;
-
+                if (amount) {
+                    total += amount;
+                }
             }
-            if (hasMadeAtransaction) break;
+
+            if (hasMadeTransaction) break;
         }
-        return hasMadeAtransaction ? total : INITIAL_BALANCE + total;
+        return hasMadeTransaction ? total : INITIAL_BALANCE + total;
+    }
+
+    sign(data) {
+        return this.keyPair.sign(generateHash(data));
     }
 
     createTransaction({ recipient, amount, chain }) {
         if (chain) {
-            this.balance = Wallet.calculateBalance({ chain, address: this.publicKey })
-        };
+            this.balance = Wallet.calculateBalance({
+                chain: chain,
+                address: this.publicKey,
+            });
+        }
 
-        if (amount > this.balance) throw new Error('Not enougn founds!')
-        return new Transaction({ sender: this, recipient, amount })
-    }
-
-    sign(data) {
-        return this.keyPair.sign(generateHash(data))
+        if (amount > this.balance) throw new Error('Not enough funds!');
+        return new Transaction({ sender: this, recipient, amount });
     }
 }
