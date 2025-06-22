@@ -1,4 +1,6 @@
 
+import { URL } from './config/api.js';
+import { generateWalletInfo, updateWalletBalance } from './dom.js';
 const form = document.getElementById('transactions');
 const recipient = document.querySelector('#recipient');
 const amount = document.querySelector('#amount');
@@ -7,19 +9,24 @@ const mineBtn = document.querySelector('#mineTransactions');
 const addBlockBtn = document.querySelector('#addBlock');
 const listBlockBtn = document.querySelector('#listBlocks')
 
-const initApp = () => {
+
+const initApp = async () => {
     const token = localStorage.getItem('jwt');
     if (!token) {
-        alert('du måste logga in!!');
+        alert('Du måste logga in!');
         location.href = './login.html';
+        return;
     }
+
+    await updateWalletInfo();
+
 };
 
 const addTransaction = async (transaction) => {
     const token = localStorage.getItem('jwt');
 
     try {
-        const response = await fetch('http://localhost:3000/api/v1/wallet/transactions', {
+        const response = await fetch(`${URL}wallet/transactions`, {
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer ' + token,
@@ -44,7 +51,7 @@ const addBlock = async (block) => {
     const token = localStorage.getItem('jwt');
 
     try {
-        const response = await fetch('http://localhost:3000/api/v1/blocks/mine', {
+        const response = await fetch(`${URL}blocks/mine`, {
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer ' + token,
@@ -69,7 +76,7 @@ const listAllTransactions = async () => {
     const token = localStorage.getItem('jwt');
 
     try {
-        const response = await fetch('http://localhost:3000/api/v1/wallet/transactions', {
+        const response = await fetch(`${URL}wallet/transactions`, {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + token,
@@ -94,7 +101,7 @@ const listAllBlocks = async () => {
     const token = localStorage.getItem('jwt');
 
     try {
-        const response = await fetch('http://localhost:3000/api/v1/blocks', {
+        const response = await fetch(`${URL}blocks`, {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + token,
@@ -116,11 +123,37 @@ const listAllBlocks = async () => {
 
 }
 
+
+const updateWalletInfo = async () => {
+    const token = localStorage.getItem('jwt');
+
+    try {
+        const response = await fetch(`${URL}wallet/info`, {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+            }
+        });
+
+        const json = await response.json();
+
+        if (response.ok && json.success) {
+            const wallet = json.data;
+            generateWalletInfo(wallet);
+            return wallet;
+        } else {
+            console.error('Could not fetch wallet info:', json);
+        }
+    } catch (error) {
+        console.error('Error fetching wallet info:', error);
+    }
+};
+
 const mineTransactions = async () => {
     const token = localStorage.getItem('jwt');
 
     try {
-        const response = await fetch('http://localhost:3000/api/v1/wallet/transactions/mine', {
+        const response = await fetch(`${URL}wallet/transactions/mine`, {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + token,
@@ -129,6 +162,9 @@ const mineTransactions = async () => {
 
         const data = await response.json();
         console.log(data)
+        if (response.ok) {
+            await updateWalletInfo();
+        }
 
         return {
             ok: response.ok,
@@ -161,7 +197,13 @@ const handleCreateTransaction = async (e) => {
         if (result.ok) {
             console.log('Transaction successful:', result.data);
             alert('Transaction successful!');
+
             form.reset();
+            if (result.data.newBalance) {
+                updateWalletBalance(result.data.newBalance);
+            } else {
+                await updateWalletInfo();
+            }
         }
     } catch (error) {
         console.error('Error:', error.message);

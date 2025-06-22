@@ -17,7 +17,7 @@ const loginUser = async (e) => {
 
 
 
-        const response = await fetch('http://localhost:3000/api/v1/auth', {
+        const response = await fetch(`${URL}auth`, {
 
             method: 'POST',
             headers: {

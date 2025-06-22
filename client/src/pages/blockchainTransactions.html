@@ -7,11 +7,15 @@
       type="module"
       src="/client/src/createTransactions.js"
       defer></script>
+
     <title>Blockchain</title>
   </head>
   <body>
     <main>
       <h1 class="page-title">Blockchain</h1>
+      <h2>Din plånbok</h2>
+      <div id="walletInfo"></div>
+
       <form id="transactions">
         <div class="transaction-form">
           <div class="form-controll">
@@ -20,11 +24,12 @@
               type="text"
               name="recipient"
               id="recipient"
+              required
               placeholder="Recipient" />
           </div>
           <div class="form-controll">
             <label for="amount">Amount: </label>
-            <input type="number" name="amount" id="amount" />
+            <input type="number" name="amount" id="amount" required />
           </div>
           <button type="submit" class="btn btn-rounded">
             lägg till transaktion
