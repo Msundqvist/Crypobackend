@@ -2,8 +2,11 @@
 const form = document.getElementById('transactions');
 const recipient = document.querySelector('#recipient');
 const amount = document.querySelector('#amount');
-const btn = document.querySelector('#listAllTransactions')
-const mineBtn = document.querySelector('#mineTransactions')
+const btn = document.querySelector('#listAllTransactions');
+const mineBtn = document.querySelector('#mineTransactions');
+const addBlockBtn = document.querySelector('#addBlock');
+const listBlockBtn = document.querySelector('#listBlocks')
+
 const initApp = () => {
     const token = localStorage.getItem('jwt');
     if (!token) {
@@ -37,11 +40,61 @@ const addTransaction = async (transaction) => {
     }
 };
 
+const addBlock = async (block) => {
+    const token = localStorage.getItem('jwt');
+
+    try {
+        const response = await fetch('http://localhost:3000/api/v1/blocks/mine', {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(block),
+        });
+
+        const data = await response.json();
+
+        return {
+            ok: response.ok,
+            data,
+        };
+
+    } catch (error) {
+        throw new Error('Något blev galet');
+    }
+};
+
 const listAllTransactions = async () => {
     const token = localStorage.getItem('jwt');
 
     try {
         const response = await fetch('http://localhost:3000/api/v1/wallet/transactions', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+            },
+        });
+
+        const data = await response.json();
+        console.log(data)
+
+        return {
+            ok: response.ok,
+            data,
+        };
+
+
+    } catch (error) {
+        throw new Error('Något blev galet');
+    }
+
+}
+const listAllBlocks = async () => {
+    const token = localStorage.getItem('jwt');
+
+    try {
+        const response = await fetch('http://localhost:3000/api/v1/blocks', {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + token,
@@ -120,3 +173,5 @@ document.addEventListener('DOMContentLoaded', initApp);
 form.addEventListener('submit', handleCreateTransaction);
 btn.addEventListener('click', listAllTransactions)
 mineBtn.addEventListener('click', mineTransactions)
+addBlockBtn.addEventListener('click', addBlock)
+listBlockBtn.addEventListener('click', listAllBlocks)
