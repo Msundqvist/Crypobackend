@@ -18,7 +18,7 @@ const initApp = async () => {
         return;
     }
 
-    await updateWalletInfo();
+
 
 };
 

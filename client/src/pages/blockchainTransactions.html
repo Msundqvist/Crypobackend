@@ -16,39 +16,40 @@
       <h1 class="page-title">Blockchain</h1>
       <h2>Din plånbok</h2>
       <div id="walletInfo"></div>
-
-      <form id="transactions">
-        <div class="transaction-form">
-          <div class="form-controll">
-            <label for="recipient">Recipient: </label>
-            <input
-              type="text"
-              name="recipient"
-              id="recipient"
-              required
-              placeholder="Recipient" />
+      <section>
+        <form id="transactions">
+          <div class="transaction-form">
+            <div class="form-controll">
+              <label for="recipient">Recipient: </label>
+              <input
+                type="text"
+                name="recipient"
+                id="recipient"
+                required
+                placeholder="Recipient" />
+            </div>
+            <div class="form-controll">
+              <label for="amount">Amount: </label>
+              <input type="number" name="amount" id="amount" required />
+            </div>
+            <button type="submit" class="btn btn-rounded">
+              lägg till transaktion
+            </button>
           </div>
-          <div class="form-controll">
-            <label for="amount">Amount: </label>
-            <input type="number" name="amount" id="amount" required />
-          </div>
-          <button type="submit" class="btn btn-rounded">
-            lägg till transaktion
+        </form>
+        <div class="btn-container">
+          <button id="listAllTransactions" class="btn btn-rounded">
+            Lista transaktioner
+          </button>
+          <button id="mineTransactions" class="btn btn-rounded">
+            Minea transaktion
+          </button>
+          <button id="addBlock" class="btn btn-rounded">lägg till block</button>
+          <button id="listBlocks" class="btn btn-rounded">
+            lista alla block
           </button>
         </div>
-      </form>
-      <div class="btn-container">
-        <button id="listAllTransactions" class="btn btn-rounded">
-          Lista transaktioner
-        </button>
-        <button id="mineTransactions" class="btn btn-rounded">
-          Minea transaktion
-        </button>
-        <button id="addBlock" class="btn btn-rounded">lägg till block</button>
-        <button id="listBlocks" class="btn btn-rounded">
-          lista alla block
-        </button>
-      </div>
+      </section>
     </main>
   </body>
 </html>

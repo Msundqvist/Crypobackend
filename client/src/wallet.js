@@ -14,7 +14,7 @@ export const updateWalletInfo = async () => {
 
         if (response.ok) {
             const walletAddress = document.getElementById('walletAdress');
-            const walletBalance = document.getElementById('walletBalanse')
+            const walletBalance = document.getElementById('walletBalance')
 
             if (walletAddress) {
                 walletAddress.textContent = result.data.adress.substring(0, 20) + '...';
