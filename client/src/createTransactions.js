@@ -4,10 +4,12 @@ import { generateWalletInfo, updateWalletBalance } from './dom.js';
 const form = document.getElementById('transactions');
 const recipient = document.querySelector('#recipient');
 const amount = document.querySelector('#amount');
-const btn = document.querySelector('#listAllTransactions');
+const listBtn = document.querySelector('#listAllTransactions');
 const mineBtn = document.querySelector('#mineTransactions');
 const addBlockBtn = document.querySelector('#addBlock');
 const listBlockBtn = document.querySelector('#listBlocks')
+const listTransactions = document.querySelector('#listTransactions')
+
 
 
 const initApp = async () => {
@@ -21,6 +23,7 @@ const initApp = async () => {
 
 
 };
+
 
 const addTransaction = async (transaction) => {
     const token = localStorage.getItem('jwt');
@@ -89,6 +92,8 @@ const listAllTransactions = async () => {
         return {
             ok: response.ok,
             data,
+            listTrans
+
         };
 
 
@@ -121,6 +126,24 @@ const listAllBlocks = async () => {
         throw new Error('Något blev galet');
     }
 
+}
+
+const listTrans = (transactions) => {
+    for (let transaction of transactions) {
+        const div = document.createElement('div')
+        const recipient = document.createElement('span')
+        const amount = document.createElement('span')
+
+
+        recipient.textContent = `Recipient: ${transaction.ouputMap}`
+        amount.textContent = `Amount: ${transaction.sender}`;
+        div.appendChild(recipient);
+        div.appendChild(amount);
+
+        listTrans.appendChild(div)
+
+
+    }
 }
 
 
@@ -213,7 +236,7 @@ const handleCreateTransaction = async (e) => {
 
 document.addEventListener('DOMContentLoaded', initApp);
 form.addEventListener('submit', handleCreateTransaction);
-btn.addEventListener('click', listAllTransactions)
+listBtn.addEventListener('click', listAllTransactions)
 mineBtn.addEventListener('click', mineTransactions)
 addBlockBtn.addEventListener('click', addBlock)
 listBlockBtn.addEventListener('click', listAllBlocks)
